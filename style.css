@@ -1,0 +1,19 @@
+.fuente{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Shadows Into Light', cursive;
+   
+}
+
+.fondo{
+
+    background: rgb(116,0,1);
+background: linear-gradient(90deg, rgba(116,0,1,1) 14%, rgba(174,0,1,1) 31%, rgba(238,186,48,1) 53%, rgba(211,166,37,1) 75%, rgba(0,0,0,1) 96%);
+
+}
+
+.fondobanner{
+    background-image: url("img/harrypotterhd.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: top center;
+}
