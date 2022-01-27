@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="fondo bg-dark">
+<body class="fondo bg-secondary">
     <header class=" animate__animated animate__fadeInDown">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col-md-8 p-4 ps-md-0 g-3  container-fluid ">
                 <div class="card mb-2">
-                    <img src="../img/houses/casas.gif" class="card-img-top img-fluid w-100 h-100" alt="...">
+                    <img src="../img/houses/casas.gif" class="card-img-top img-fluid w-100 h-100" alt="..." id="housesimg">  
                     <div class="card-body">
                         <h5 class="card-title"></h5>
                         <p class="card-text"></p>
@@ -63,12 +63,12 @@
     <div class="container">
 
         <section>
-            <div class="row bg-light mb-5">
-                <div class="col-12 col-md-4 mt-3 mb-5">
+            <div class="row bg-light mb-5 ">
+                <div class="col-12 col-md-4 mt-4 mb-4">
                     <img src="../img/houses/Gri.gif" class="w-100" alt="...">
                 </div>
-                <div class="col-12 col-md-6 px-5">
-                    <h5 class="Movieandbook text-danger text-center" id="titulo1"> Gryffindor</h5>
+                <div class="col-12 col-md-6 px-5 mt-5">
+                    <h5 class="movieandbook text-danger text-center" id="titulo1"> Gryffindor</h5>
                     <p>Another instance of placeholder content for this other custom component. It is intended to mimic
                         what some real-world content would look like, and we're using it here to give the component a
                         bit of body and size.</p>
@@ -77,49 +77,50 @@
             </div>
         </section>
 
+
         <section>
-            <div class="row bg-light mt-5">
-                <div class="col-12 col-md-8 px-5">
-                    <h5 class="Movieandbook text-primary text-center"> Ravenclaw</h5>
+            <div class="row bg-light mb-5">
+                <div class="col-12 col-md-8 px-5 mt-5">
+                    <h5 class=" movieandbook text-primary text-center" id="titulo2"> Ravenclaw </h5>
                     <p>Another instance of placeholder content for this other custom component. It is intended to mimic
                         what some real-world content would look like, and we're using it here to give the component a
                         bit of body and size.</p>
                     <a href="#" class="">Go somewhere</a>
                 </div>
-                <div class="col-md-4 mb-md-0 p-md-4">
+                <div class="col-12 col-md-4 mt-4 mb-4">
                     <img src="../img/houses/ra.gif" class="w-100" alt="...">
                 </div>
             </div>
 
         </section>
 
+
         <section>
-            <div class="row g-0 bg-light position-relative">
-                <div class="col-md-4 mb-md-0 p-md-4">
+            <div class="row bg-light mb-5">
+                <div class="col-12 col-md-4 mt-4 mb-4">
                     <img src="../img/houses/sly.gif" class="w-100" alt="...">
                 </div>
-                <div class="col-md-6 p-4 ps-md-0 g-3">
-                    <h5 class="mt-0 Movieandbook text-success text-center">Slytherin</h5>
+                <div class="col-12 col-md-6 px-5 mt-5">
+                    <h5 class="movieandbook text-success text-center"  id="titulo3"> Slytherin</h5>
                     <p>Another instance of placeholder content for this other custom component. It is intended to mimic
                         what some real-world content would look like, and we're using it here to give the component a
                         bit of body and size.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="">Go somewhere</a>
                 </div>
             </div>
-
         </section>
 
-        <section>
-            <div class="row g-0 bg-light position-relative">
 
-                <div class="col-md-8 p-4 ps-md-0 g-3 ">
-                    <h5 class="mt-0 Movieandbook text-warning text-center"> Hufflepuff </h5>
+        <section>
+            <div class="row bg-light mb-5">
+                <div class="col-12 col-md-8 px-5 mt-5">
+                    <h5 class=" movieandbook text-warning text-center" id="titulo4"> Hufflepuff </h5>
                     <p>Another instance of placeholder content for this other custom component. It is intended to mimic
                         what some real-world content would look like, and we're using it here to give the component a
                         bit of body and size.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="">Go somewhere</a>
                 </div>
-                <div class="col-md-4 mb-md-0 p-md-4">
+                <div class="col-12 col-md-4 mt-4 mb-4">
                     <img src="../img/houses/hu.gif" class="w-100" alt="...">
                 </div>
             </div>
@@ -135,10 +136,6 @@
 
 
     <script src="../controladorHouses.js"></script>
-    <script type="text/javascript">
-        var sonido = new audio();
-        sonido.src = sonido.mp3;
-    </script>
     <script src="controlador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
