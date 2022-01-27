@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -38,22 +39,62 @@
     </header>
 
     <main>
-        
+
         <div class="container-fluid mt-5 g-3">
             <div class="row row-cols-1 row-cols-md-5 g-2" id="fila">
-
-
             </div>
         </div>
+
+
     </main>
+
+    <section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalInfoProducto">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-secondary">
+                        <h5 class="modal-title">Harry Potter Shop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 ">
+                                    <img src="../img/Books/libro-deathly.jpeg" alt="" class="img-fluid w-100"
+                                        id="imagenProducto">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <h5 id="nombreProducto">Nombre producto</h5>
+                                    <h5 id="precioProducto">Precio</h5>
+                                    <h6 id="descripcionProducto"> Lorem ipsum dolor sit amet consectetur adipisici</h6>
+                                    <div class="mb-3">
+                                        <label  class="form-label">Amount</label>
+                                        <input type="number" class="form-control" id="cantidadProducto" value="1" min="0">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
 
     </footer>
 
-    
-    <script src="../js/llenarTienda.js"></script>
-    
+
+
+    <script src="../js/controlador.js" type="module"></script>
+
     <script src="https://kit.fontawesome.com/eed55b216d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
