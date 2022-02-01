@@ -5,6 +5,13 @@ import{llenarTienda} from "./llenarTienda.js"
 
 import{ampliarInfoProducto} from "./ampliarInfoProducto.js"
 
+import{agregarCarrito} from  "./agregarAlCarrito.js"
+
+// VARIABLES GLOBALES DE LA TIENDA
+let producto={}
+let carrito=[]
+
+
 
 // llamo a la funcion llenarTienda
 
@@ -18,7 +25,32 @@ let modalInfoProducto = new bootstrap.Modal(document.getElementById('modalInfoPr
 let listaProductos=document.getElementById("fila")
 listaProductos.addEventListener("click",function(event){
 
-    ampliarInfoProducto(event)
+    producto=ampliarInfoProducto(event)
     modalInfoProducto.show()
    
+})
+
+
+//Llamado a la funcion agregar al carrito
+let botonAgregarCarrito=document.getElementById("botonAgregarCarrito")
+botonAgregarCarrito.addEventListener("click",function() {
+
+    let cantidadProducto=document.getElementById("cantidadProducto").value
+    producto.cantidad=cantidadProducto
+    
+
+    //Agrego el producto al carrito
+    carrito.push(producto)
+   
+
+    //Oculto la modal de infoProducto
+    modalInfoProducto.hide()
+
+
+    // Llamar la función agregarCarrito
+    agregarCarrito(carrito)
+    console.log(carrito)
+
+
+
 })

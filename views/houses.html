@@ -74,9 +74,9 @@
                     <h5 class="movieandbook text-danger text-center" id="titulo1"> Gryffindor</h5>
                     <p class=" mt-4">Gryffindor is one of the four houses into which the students of
                         Hogwarts School of Witchcraft and Wizardry are divided in the Harry Potter books.
-                        Gryffindor was founded by <a class="text-danger text-decoration-none" href="">Godric
-                            Gryffindor</a>, an honorable and brave great wizard
-                        born in
+                        Gryffindor was founded by <span id="texto1"><a href="" class="text-decoration-none text-danger"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Godric Gryffindor </a> </span>, an honorable and brave great wizard born in
                         Godric's Hollow, the same town as Harry and Albus Dumbledore.
                     <p class=""><strong>Characteristics:</strong> courage and bravery. A good member of
                         Gryffindor has great daring, courage and
@@ -92,6 +92,58 @@
         </section>
 
 
+        <main>
+
+            <div class="container-fluid mt-5 g-3">
+                <div class="row row-cols-1 row-cols-md-5 g-2" id="fila">
+                </div>
+            </div>
+    
+    
+        </main>
+
+        <section>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modalHouses">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header  bg-dark">
+                            <h5 class="modal-title text-danger" > Godric Gryffindor</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 ">
+                                            <img src="../img/Books/libro-deathly.jpeg" alt="" class="img-fluid w-100"
+                                                id="imagenProducto">
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <h5 id="nombreProducto">Nombre producto</h5>
+                                            <h5 id="precioProducto">Precio</h5>
+                                            <h6 id="descripcionProducto"> Lorem ipsum dolor sit amet consectetur adipisici</h6>
+                                            <div class="mb-3">
+                                                <label class="form-label">Amount</label>
+                                                <input type="number" class="form-control" id="cantidadProducto" value="1"
+                                                    min="0">
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section>
             <div class="row bg-light mb-5">
                 <div class="col-12 col-md-8 px-5 mt-5">
@@ -100,7 +152,8 @@
                         School of
                         Witchcraft and
                         Wizardry are divided in the universe of the Harry Potter books and movies. This house was
-                        founded by <a class="text-decoration-none" href="">Rowena Ravenclaw</a> and only intelligent,
+                        founded by <span id="texto2"> <a class="text-decoration-none" href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Rowena Ravenclaw</a></span> and only intelligent,
                         creative and wise people are
                         chosen.
                     <p class=""><strong>Characteristics:</strong> Intelligence, curiosity and wisdom. A
@@ -117,6 +170,9 @@
 
         </section>
 
+     
+
+
         <section>
             <div class="row bg-light mb-5">
 
@@ -125,10 +181,12 @@
                 </div>
                 <div class="col-12 col-md-8 px-5 mt-5">
                     <h5 class="movieandbook text-success text-center" id="titulo3"> Slytherin</h5>
-                    <p class=" mt-4">Slytherin is one of the four houses into which the students of Hogwarts School are divided in
+                    <p class=" mt-4">Slytherin is one of the four houses into which the students of Hogwarts School are
+                        divided in
                         the fictional universe of the Harry Potter books and movies. Each of these houses corresponds to
-                        one of the founders of Hogwarts, in this case <a class="text-decoration-none text-success"
-                            href="">Salazar Slytherin.</a>
+                        one of the founders of Hogwarts, in this case <span><a class="text-decoration-none text-success"
+                            href="" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Salazar Slytherin.</a></span>
 
                     <p> <strong>Characteristics: </strong>They are people who use any means to achieve their goals, have
                         determination,
@@ -146,17 +204,22 @@
 
 
 
+
         <section>
             <div class="row bg-light mb-5">
                 <div class="col-12 col-md-8 px-5 mt-5">
                     <h5 class=" movieandbook text-warning text-center" id="titulo4"> Hufflepuff </h5>
-                    <p class=" mt-4">Hufflepuff is one of the four houses into which the students of Hogwarts School of Witchcraft and
+                    <p class=" mt-4">Hufflepuff is one of the four houses into which the students of Hogwarts School of
+                        Witchcraft and
                         Wizardry are divided in the fantasy and fictional universe of the Harry Potter books.
 
-                        This house was founded by <a class="  text-decoration-none text-warning" href="">Helga Hufflepuff</a>. This
+                        This house was founded by <span><a class="  text-decoration-none text-warning" href="" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Helga
+                            Hufflepuff</a></span>. This
                         house highlights the virtues of those who are
                         fair, loyal, and unafraid of hard work. His students are honest, hardworking, and fair.
-                    <p> <strong>Characteristics:</strong> fair, loyal and hard-working. Hufflepuffs are good people and they tend to like
+                    <p> <strong>Characteristics:</strong> fair, loyal and hard-working. Hufflepuffs are good people and
+                        they tend to like
                         everyone. They are patient, tolerant and will always do everything honestly, without cheating
                         and respecting the rules.</p>
                     </p>
@@ -170,6 +233,8 @@
         </section>
 
 
+
+
     </div>
 
 
@@ -177,7 +242,7 @@
 
 
 
-    <script src="../controladorHouses.js"></script>
+    <script src="../controladorHouses.js" type="module"></script>
     <script src="controlador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
