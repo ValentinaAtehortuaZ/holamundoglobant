@@ -1,5 +1,6 @@
 let housesimg=document.getElementById("housesimg")
 housesimg.addEventListener("mouseover",function(){
+    
     let audio=new Audio("../audio/hogw.mp3")
     audio.play()
 })
@@ -43,20 +44,28 @@ texto1.addEventListener("click", function(){
 
 // IMPORTACION DE ELEMENTOS
 
+import{llenarHouses} from "./llenarHouses.js"
+
+import{ampliarHoueses} from "./ampliarHouses.js"
 
 
+// VARIABLES GLOBALES DE LA TIENDA
 
-import{ampliarHouses} from "./ampliarHouses.js"
+
+// llamo a la funcion llenarTienda
+
+llenarHouses()
+
 
 
 // Llamar la funcion ampliar info productos
 
 let modalHouses = new bootstrap.Modal(document.getElementById('modalHouses'))
 
-let listaHouses=document.getElementById("fila")
-listaHouses.addEventListener("click",function(event){
+let informacion=document.getElementById("fila")
+informacion.addEventListener("click",function(event){
 
-    ampliarHouses(event)
-    modalInfoProducto.show()
+    fundadores=ampliarHoueses(event)
+    modalHouses.show()
    
 })

@@ -15,7 +15,7 @@ let total = 0;
 carrito.forEach(function (producto) {
 
    
-   contador=contador+1
+   contador=contador+cantidadProducto
 
    console.log(contador)
    

@@ -43,8 +43,8 @@
     </header>
 
     <main>
-        <div class="row">
-            <div class="col-md-8 p-4 ps-md-0 g-3  container-fluid ">
+        <div class="row" >
+            <div class="col-md-8 p-4 ps-md-0 g-3  container-fluid " >
                 <div class="card mb-2">
                     <img src="../img/houses/casas.gif" class="card-img-top img-fluid w-100 h-100" alt="..."
                         id="housesimg">
@@ -63,9 +63,19 @@
 
     <div class="container">
 
+        <main>
+
+            <div class="container-fluid mt-5 g-3">
+                <div class="row row-cols-1 row-cols-md-5 g-2" id="fila">
+                </div>
+            </div>
+    
+    
+        </main>
+
 
         <section>
-            <div class="row bg-light mb-5">
+            <div class="row bg-light mb-5"  >
 
                 <div class="col-12 col-md-4 mt-4 mb-4">
                     <img src="../img/houses/Gri.gif" class="w-100" alt="...">
@@ -74,8 +84,8 @@
                     <h5 class="movieandbook text-danger text-center" id="titulo1"> Gryffindor</h5>
                     <p class=" mt-4">Gryffindor is one of the four houses into which the students of
                         Hogwarts School of Witchcraft and Wizardry are divided in the Harry Potter books.
-                        Gryffindor was founded by <span id="texto1"><a href="" class="text-decoration-none text-danger"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Gryffindor was founded by <span id="text1"><a href="" class="text-decoration-none text-danger "
+                                data-bs-toggle="modal" data-bs-target="#modalHouses">
                                 Godric Gryffindor </a> </span>, an honorable and brave great wizard born in
                         Godric's Hollow, the same town as Harry and Albus Dumbledore.
                     <p class=""><strong>Characteristics:</strong> courage and bravery. A good member of
@@ -92,24 +102,15 @@
         </section>
 
 
-        <main>
-
-            <div class="container-fluid mt-5 g-3">
-                <div class="row row-cols-1 row-cols-md-5 g-2" id="fila">
-                </div>
-            </div>
-    
-    
-        </main>
-
         <section>
-            <!-- Modal 1 -->
+
+            <!-- Modal -->
             <div class="modal fade" id="modalHouses">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header  bg-dark">
-                            <h5 class="modal-title text-danger" > Godric Gryffindor</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Hogwarts house founders</h5>
+                            
                         </div>
                         <div class="modal-body">
                             <div class="modal-body">
@@ -121,27 +122,23 @@
                                         </div>
                                         <div class="col-12 col-md-8">
                                             <h5 id="nombreProducto">Nombre producto</h5>
-                                            <h5 id="precioProducto">Precio</h5>
-                                            <h6 id="descripcionProducto"> Lorem ipsum dolor sit amet consectetur adipisici</h6>
-                                            <div class="mb-3">
-                                                <label class="form-label">Amount</label>
-                                                <input type="number" class="form-control" id="cantidadProducto" value="1"
-                                                    min="0">
-                                            </div>
-        
+                                            <h6 id="descripcionProducto"> Lorem ipsum dolor sit amet consectetur
+                                                adipisici
+                                            </h6>
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
 
 
         <section>
@@ -152,8 +149,9 @@
                         School of
                         Witchcraft and
                         Wizardry are divided in the universe of the Harry Potter books and movies. This house was
-                        founded by <span id="texto2"> <a class="text-decoration-none" href="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Rowena Ravenclaw</a></span> and only intelligent,
+                        founded by <span id="text2"> <a class="text-decoration-none" href="" data-bs-toggle="modal"
+                                data-bs-target="#modalHouses">Rowena Ravenclaw</a></span>
+                        and only intelligent,
                         creative and wise people are
                         chosen.
                     <p class=""><strong>Characteristics:</strong> Intelligence, curiosity and wisdom. A
@@ -170,7 +168,6 @@
 
         </section>
 
-     
 
 
         <section>
@@ -184,9 +181,9 @@
                     <p class=" mt-4">Slytherin is one of the four houses into which the students of Hogwarts School are
                         divided in
                         the fictional universe of the Harry Potter books and movies. Each of these houses corresponds to
-                        one of the founders of Hogwarts, in this case <span><a class="text-decoration-none text-success"
-                            href="" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Salazar Slytherin.</a></span>
+                        one of the founders of Hogwarts, in this case <span id="text3"><a
+                                class="text-decoration-none text-success" href="" data-bs-toggle="modal"
+                                data-bs-target="#modalHouses">Salazar Slytherin.</a></span>
 
                     <p> <strong>Characteristics: </strong>They are people who use any means to achieve their goals, have
                         determination,
@@ -195,7 +192,7 @@
                         deciding exactly what to do, and once they figure it out, they get it done, regardless of the
                         means to do it.</p>
                     </p>
-                    <a class="text-decoration-none text-success" href="#" class=""> Prominent figures</a>
+                    <a class=" text-decoration-none text-success" href="#" class=""> Prominent figures</a>
                 </div>
 
             </div>
@@ -213,9 +210,9 @@
                         Witchcraft and
                         Wizardry are divided in the fantasy and fictional universe of the Harry Potter books.
 
-                        This house was founded by <span><a class="  text-decoration-none text-warning" href="" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Helga
-                            Hufflepuff</a></span>. This
+                        This house was founded by <span id="text4"><a class="  text-decoration-none text-warning"
+                                href="" data-bs-toggle="modal" data-bs-target="#modalHouses">Helga
+                                Hufflepuff</a></span>. This
                         house highlights the virtues of those who are
                         fair, loyal, and unafraid of hard work. His students are honest, hardworking, and fair.
                     <p> <strong>Characteristics:</strong> fair, loyal and hard-working. Hufflepuffs are good people and
@@ -242,8 +239,7 @@
 
 
 
-    <script src="../controladorHouses.js" type="module"></script>
-    <script src="controlador.js"></script>
+    <script src="../js/controladorHouses.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
