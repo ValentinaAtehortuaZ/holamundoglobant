@@ -59,8 +59,10 @@ botonAgregarCarrito.addEventListener("click",function() {
 
 // Llamo a la funcion ver carrito
 let botonVerCarrito=document.getElementById("botonCarrito")
+let modalVerCarrito = new bootstrap.Modal(document.getElementById('modalVerCarrito'))
 botonVerCarrito.addEventListener("click",function(){
     verCarrito(carrito)
+    modalVerCarrito.show()
 })
 
 
@@ -71,5 +73,14 @@ botonlimpiar.addEventListener("click",function(){
 
     let contenedorModal=document.getElementById("contenedorCarrito")
     contenedorModal.innerHTML=""
+    carrito= []
+
+    let pildora = document.getElementById("pildora")
+    pildora.innerHTML=""
+    pildora = []
+
+    
+    modalVerCarrito.hide()
+
 
 })

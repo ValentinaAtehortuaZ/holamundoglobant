@@ -1,6 +1,6 @@
 export function verCarrito(carrito){
 
-    let modalVerCarrito = new bootstrap.Modal(document.getElementById('modalVerCarrito'))
+    
 
     let contenedor=document.getElementById("contenedorCarrito")
     contenedor.innerHTML=""
@@ -54,6 +54,6 @@ export function verCarrito(carrito){
         
     })
 
-    modalVerCarrito.show()
+    
    
 }
