@@ -4,6 +4,7 @@ export function verCarrito(carrito) {
 
     let contenedor = document.getElementById("contenedorCarrito")
     contenedor.innerHTML = ""
+    let total = 0, totalfinal = 0
 
     carrito.forEach(function (producto) {
 
@@ -43,7 +44,7 @@ export function verCarrito(carrito) {
         separador.classList.add("text-dark")
 
 
-
+        total = total + (Number(producto.precio) * Number(producto.cantidad))
 
         //PADRES E HIJOS
         columna1.appendChild(fotoProducto)
@@ -62,6 +63,8 @@ export function verCarrito(carrito) {
 
     })
 
-
+    totalfinal = document.createElement("h5")
+    totalfinal.textContent = total
+    contenedor.appendChild(totalfinal)
 
 }

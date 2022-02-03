@@ -5,9 +5,9 @@ export function llenarTienda(){
 let productos=[
 
     {nombre:" Hermione Granger Bag", precio:120000,foto:"../img/Productos/bolso.jpg",cantidad:0,descripcion:"Replica Hermione Granger Bag "},
-    {nombre: "Platform Poster 9 3/4", precio: 70000,foto:"../img/Productos/anden.jpg",cantidad:0,descripcion:" Platform Poster Replica 9 3/4"},
+    {nombre: "Platform Poster 9 3/4", precio:  70000,foto:"../img/Productos/anden.jpg",cantidad:0,descripcion:" Platform Poster Replica 9 3/4"},
     {nombre:"Hogwarts Goblet Cup", precio:130000,foto:"../img/Productos/copa1.jpg",cantidad:0,descripcion:" Hogwarts Goblet Cup"},
-    {nombre:"Hermione Figure With Wand", precio: 90000,foto:"../img/Productos/hermione.jpg",cantidad:0,descripcion:"Hermione figure with wand"},
+    {nombre:"Hermione Figure With Wand", precio:90000,foto:"../img/Productos/hermione.jpg",cantidad:0,descripcion:"Hermione figure with wand"},
     {nombre:"Dragées Of All Flavors", precio:30000,foto:"../img/Productos/grageas.jpg",cantidad:0,descripcion:"Dragées of all flavors"},
     {nombre:"Marauder's Map", precio:200000,foto:"../img/Productos/mapa.jpg",cantidad:0,descripcion:"Marauder's Map"},
     {nombre:"Golden Snitch", precio:100000,foto:"../img/Productos/replica.jpg",cantidad:0,descripcion:"Golden snitch"},
@@ -58,8 +58,8 @@ productos.forEach(function (producto) {
     let precioProducto = document.createElement("h4")
     precioProducto.classList.add("text-center")
     precioProducto.classList.add("text-danger")
+    precioProducto.textContent =  producto.precio
     precioProducto.textContent = producto.precio
-    precioProducto.textContent = "$" + producto.precio
 
     let botonProducto = document.createElement("button")
     botonProducto.classList.add("m-2")
