@@ -24,10 +24,10 @@ export function verCarrito(carrito){
         fotoProducto.classList.add("w-100")
         fotoProducto.src=producto.foto
 
-        let nombreProducto=document.createElement("h4")
+        let nombreProducto=document.createElement("h5")
         nombreProducto.textContent=producto.nombre
 
-        let precioProducto=document.createElement("h5")
+        let precioProducto=document.createElement("h6")
         precioProducto.textContent = "$" + producto.precio
         precioProducto.textContent=producto.precio
 
