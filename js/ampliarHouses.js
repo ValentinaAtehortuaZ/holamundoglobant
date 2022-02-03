@@ -2,7 +2,7 @@ export function ampliarHouses(event){
 
     let fundador={}
         
-        if(event.target.classList.contains("href")){
+        if(event.target.classList.contains("text-danger")){
 
             console.log("hiciste click")
     

@@ -46,7 +46,7 @@ texto1.addEventListener("click", function(){
 
 import{llenarHouses} from "./llenarHouses.js"
 
-import{ampliarHoueses} from "./ampliarHouses.js"
+import{ampliarHouses} from "./ampliarHouses.js"
 
 
 // VARIABLES GLOBALES DE LA TIENDA
@@ -65,7 +65,7 @@ let modalHouses = new bootstrap.Modal(document.getElementById('modalHouses'))
 let informacion=document.getElementById("fila")
 informacion.addEventListener("click",function(event){
 
-    fundadores=ampliarHoueses(event)
+    fundadores=ampliarHouses(event)
     modalHouses.show()
    
 })

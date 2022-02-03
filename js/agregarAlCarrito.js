@@ -9,20 +9,19 @@ pildora.classList.remove("invisible")
 
 // Recorrer el arreglo y sacarle fotocopia a la informacion que hay por dentro
 
-let contador=0
-let total = 0;
+let cantidad=0
+
 
 carrito.forEach(function (producto) {
 
    
-   contador=contador+cantidadProducto
-
-   console.log(contador)
-   
+   cantidad=cantidad+Number(producto.cantidad)
 
 
 })
 
+pildora.textContent=cantidad
+pildora.classList.remove("invisible")
 
 
 }
