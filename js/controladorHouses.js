@@ -1,3 +1,32 @@
+// IMPORTACION DE ELEMENTOS
+
+import{llenarHouses} from "./llenarHouses.js"
+
+import{ampliarHouses} from "./ampliarHouses.js"
+
+
+// VARIABLES GLOBALES DE LA TIENDA
+
+
+// llamo a la funcion llenarTienda
+
+//llenarHouses()
+
+
+// Llamar la funcion ampliar info productos
+
+let modalHouses = new bootstrap.Modal(document.getElementById('modalHouses'))
+
+let informacion=document.getElementById("contenedorcasas")
+informacion.addEventListener("click",function(event){
+
+    ampliarHouses(event)
+    modalHouses.show()
+   
+})
+
+
+
 let housesimg=document.getElementById("housesimg")
 housesimg.addEventListener("mouseover",function(){
     
@@ -42,30 +71,3 @@ texto1.addEventListener("click", function(){
     console.log("lanzar modal")
 })*/
 
-// IMPORTACION DE ELEMENTOS
-
-import{llenarHouses} from "./llenarHouses.js"
-
-import{ampliarHouses} from "./ampliarHouses.js"
-
-
-// VARIABLES GLOBALES DE LA TIENDA
-
-
-// llamo a la funcion llenarTienda
-
-llenarHouses()
-
-
-
-// Llamar la funcion ampliar info productos
-
-let modalHouses = new bootstrap.Modal(document.getElementById('modalHouses'))
-
-let informacion=document.getElementById("fila")
-informacion.addEventListener("click",function(event){
-
-    fundadores=ampliarHouses(event)
-    modalHouses.show()
-   
-})

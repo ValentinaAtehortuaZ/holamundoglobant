@@ -31,10 +31,11 @@
                     </ul>
                     <ul class="navbar-nav  mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="#" id="botonCarrito">
                                 <i class="fas fa-shopping-cart fa-2x"></i>
                                 <span
-                                    class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible" id="pildora">
+                                    class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible"
+                                    id="pildora">
                                     99+
                                 </span>
                             </a>
@@ -90,7 +91,34 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark" id="botonAgregarCarrito">Buy</button>
+                        <button type="button" class="btn btn-dark" id="botonAgregarCarrito">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalVerCarrito" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Harry Potter Store</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container" id="contenedorCarrito">
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="botonlimpiar">Clean Cart</button>
+                        <button type="button" class="btn btn-primary">US$</button>
+                        <button type="button" class="btn btn-primary">Buy</button>
                     </div>
                 </div>
             </div>

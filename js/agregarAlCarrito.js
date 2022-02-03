@@ -18,10 +18,14 @@ carrito.forEach(function (producto) {
    cantidad=cantidad+Number(producto.cantidad)
 
 
+
 })
 
 pildora.textContent=cantidad
 pildora.classList.remove("invisible")
+
+
+
 
 
 }

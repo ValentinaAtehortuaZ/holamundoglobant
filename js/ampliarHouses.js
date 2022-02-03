@@ -1,32 +1,64 @@
 export function ampliarHouses(event){
 
-    let fundador={}
-        
-        if(event.target.classList.contains("text-danger")){
 
-            console.log("hiciste click")
-    
-          // console.log(event.target.parentElement.querySelector("h5").textContent)
-          // console.log(event.target.parentElement.querySelector("h6").textContent)
-          // console.log(event.target.parentElement.querySelector("img").src)
-    
-          fundador={
-            foto:event.target.parentElement.querySelector("img").src,
-            nombre:event.target.parentElement.querySelector("h5").textContent,
-            descripcion:event.target.parentElement.querySelector("h3").textContent
-        }
+    let fundadores = [
+
+        { nombre: " Godric Gryffindor ", foto: "../img/Fundadores/godric.jpeg", descripcion: "He was a wizard who lived in medieval times and one of the four founders of Hogwarts School of Witchcraft and Wizardry." },
+        { nombre: "Rowena Ravenclaw", foto: "../img/Fundadores/rowena.jpeg", descripcion: " She was a Scottish witch who lived in the Middle Ages. Noted for her intelligence and creativity, and is considered one of the greatest witches of the time, Ravenclaw was one of the four founders of Hogwarts School of Witchcraft and Wizardry." },
+        { nombre: "Salazar Slytherin", foto: "../img/Fundadores/salazar.jpeg", descripcion: " He was a famous pure-blood wizard of the Middle Ages. He spoke Parseltongue and was extremely proficient in the use of Legilimency. He is one of the four founders of Hogwarts School of Witchcraft and Wizardry." },
+        { nombre: "Helga Hufflepuff", foto: "../img/Fundadores/Helga.jpeg", descripcion: "She was a witch from medieval times and was one of the four founders of Hogwarts School of Witchcraft and Wizardry." },
+
+    ]
+
+    let fundador={}
+
+    //console.log(event.target)
+        
+        if(event.target.classList.contains("text-decoration-none")){
+
+            let etiquetafundador=(event.target.parentElement.querySelector("a").classList)
+            
+            if(etiquetafundador.contains("uno")){
+
+                fundador.nombre=fundadores[0].nombre
+                fundador.foto=fundadores[0].foto
+                fundador.descripcion=fundadores[0].descripcion
+              
+            }else if(etiquetafundador.contains("dos")){
+                
+                fundador.nombre=fundadores[1].nombre
+                fundador.foto=fundadores[1].foto
+                fundador.descripcion=fundadores[1].descripcion
+
+            }else if(etiquetafundador.contains("tres")){
+               
+                fundador.nombre=fundadores[2].nombre
+                fundador.foto=fundadores[2].foto
+                fundador.descripcion=fundadores[2].descripcion
+
+            }else if(etiquetafundador.contains("cuatro")){
+                
+                fundador.nombre=fundadores[3].nombre
+                fundador.foto=fundadores[3].foto
+                fundador.descripcion=fundadores[3].descripcion
+
+            }
+
+            console.log(fundador)
+               
+
+        let etiquetaNombreFundador=document.getElementById("nombreFundador")
+        etiquetaNombreFundador.textContent=fundador.nombre
  
-        let etiquetaNombreProducto=document.getElementById("nombreProducto")
-        etiquetaNombreProducto.textContent=fundador.nombre
  
+        let etiquetaImagenFundador=document.getElementById("imagenFundador")
+        etiquetaImagenFundador.src=fundador.foto
  
-        let etiquetaImagenProducto=document.getElementById("imagenProducto")
-        etiquetaImagenProducto.src=fundador.foto
- 
-        let etiquetaDescripcionProducto=document.getElementById("descripcionProducto")
-        etiquetaDescripcionProducto.textContent=fundador.descripcion
- 
-        return(fundador)
+        let etiquetaDescripcionFundador=document.getElementById("descripcionFundador")
+        etiquetaDescripcionFundador.textContent=fundador.descripcion
+
+
+
     
     
         }

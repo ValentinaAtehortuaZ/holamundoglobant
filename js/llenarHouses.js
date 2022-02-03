@@ -10,18 +10,19 @@ export function llenarHouses() {
 
     ]
 
-    let fila = document.getElementById("fila")
+    let contenedorFundador = document.getElementById("contenedorFundador")
 
     fundador.forEach(function (fundador) {
 
         // Creamos los elementos necesarios para pintar los productos (traversing)
 
+        let fila=document.createElement("div")
+        fila.classList.add("row")
+
+        
         let columna = document.createElement("div")
         columna.classList.add("col")
 
-        let tarjeta = document.createElement("div")
-        tarjeta.classList.add("card")
-        tarjeta.classList.add("h-100")
 
         let imagen = document.createElement("img")
         imagen.classList.add("card-img-top")
@@ -29,27 +30,27 @@ export function llenarHouses() {
         imagen.classList.add("p-3")
         imagen.src = fundador.foto
 
-        let nombreProducto = document.createElement("h5")
-        nombreProducto.classList.add("text-dark")
-        nombreProducto.classList.add("fw-bold")
-        nombreProducto.classList.add("text-center")
-        nombreProducto.textContent = fundador.nombre
+        let nombreFundador = document.createElement("h5")
+        nombreFundador.classList.add("text-dark")
+        nombreFundador.classList.add("fw-bold")
+        nombreFundador.classList.add("text-center")
+        nombreFundador.textContent = fundador.nombre
 
-        let descripcionProducto = document.createElement("h3")
-        descripcionProducto.classList.add("invisible")
-        descripcionProducto.classList.add("h6")
-        descripcionProducto.classList.add("text-center")
-        descripcionProducto.classList.add("text-muted")
-        descripcionProducto.textContent = fundador.descripcion
+        let descripcionFundador = document.createElement("h3")
+        descripcionFundador.classList.add("invisible")
+        descripcionFundador.classList.add("h6")
+        descripcionFundador.classList.add("text-center")
+        descripcionFundador.classList.add("text-muted")
+        descripcionFundador.textContent = fundador.descripcion
 
 
 
-        tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombreProducto)
-        tarjeta.appendChild(descripcionProducto)
+        columna.appendChild(imagen)
+        columna.appendChild(nombreFundador)
+        columna.appendChild(descripcionFundador)
 
-        columna.appendChild(tarjeta)
         fila.appendChild(columna)
+        contenedorFundador.appendChild(fila)
 
     })
 }
