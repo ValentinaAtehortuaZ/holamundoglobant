@@ -51,10 +51,11 @@ botonAgregarCarrito.addEventListener("click",function() {
 
     // Llamar la función agregarCarrito
     agregarCarrito(carrito)
+
+   cantidadProducto=document.getElementById("cantidadProducto").value=1
     
 
 })
-
 
 
 // Llamo a la funcion ver carrito

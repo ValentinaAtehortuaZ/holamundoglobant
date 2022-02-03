@@ -1,39 +1,46 @@
-export function verCarrito(carrito){
+export function verCarrito(carrito) {
 
-    
 
-    let contenedor=document.getElementById("contenedorCarrito")
-    contenedor.innerHTML=""
 
-    carrito.forEach(function(producto) {
+    let contenedor = document.getElementById("contenedorCarrito")
+    contenedor.innerHTML = ""
 
-        let fila=document.createElement("div")
+    carrito.forEach(function (producto) {
+
+        let fila = document.createElement("div")
         fila.classList.add("row")
 
-        let columna1=document.createElement("div")
+        let columna1 = document.createElement("div")
         columna1.classList.add("col-12")
         columna1.classList.add("col-md-4")
 
-        let columna2=document.createElement("div")
+        let columna2 = document.createElement("div")
         columna2.classList.add("col-12")
         columna2.classList.add("col-md-4")
         columna2.classList.add("text-center")
 
-        let fotoProducto=document.createElement("img")
+        let fotoProducto = document.createElement("img")
         fotoProducto.classList.add("img-fluid")
         fotoProducto.classList.add("w-100")
-        fotoProducto.src=producto.foto
+        fotoProducto.src = producto.foto
 
-        let nombreProducto=document.createElement("h5")
-        nombreProducto.textContent=producto.nombre
+        let nombreProducto = document.createElement("h5")
+        nombreProducto.textContent = producto.nombre
 
-        let precioProducto=document.createElement("h6")
+        let precioProducto = document.createElement("h6")
         precioProducto.textContent = "$" + producto.precio
-        precioProducto.textContent=producto.precio
+        precioProducto.textContent = producto.precio
 
-        let cantidad=document.createElement("h6")
-        cantidad.textContent=producto.cantidad
-        cantidad.textContent=  producto.cantidad + " Und"
+        let cantidad = document.createElement("h6")
+        cantidad.textContent = producto.cantidad
+        cantidad.textContent = producto.cantidad + " Und"
+
+
+        let separador = document.createElement("hr")
+        separador.classList.add("w-150")
+        separador.classList.add("mx-auto")
+        separador.classList.add("d-block")
+        separador.classList.add("text-dark")
 
 
 
@@ -45,15 +52,16 @@ export function verCarrito(carrito){
         columna2.appendChild(nombreProducto)
         columna2.appendChild(precioProducto)
         columna2.appendChild(cantidad)
+        columna2.appendChild(separador)
 
         contenedor.appendChild(fila)
 
-    
 
 
-        
+
+
     })
 
-    
-   
+
+
 }
