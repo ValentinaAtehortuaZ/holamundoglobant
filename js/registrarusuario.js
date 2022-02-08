@@ -34,7 +34,7 @@ botonregistro.addEventListener("click", function (event) {
             const errorMessage = error.message;
             // ..
 
-            console.log("error")
+            console.log("error"+errorCode+" "+errorMessage)
         });
 
 })
