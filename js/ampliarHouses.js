@@ -18,6 +18,7 @@ export function ampliarHouses(event){
 
             let etiquetafundador=(event.target.parentElement.querySelector("a").classList)
             let cabecera=document.getElementById("cabeceraCasa")
+            let closeCasas=document.getElementById("closeCasas")
             
             if(etiquetafundador.contains("uno")){
 
@@ -28,6 +29,10 @@ export function ampliarHouses(event){
                 cabecera.classList.remove("bg-primary")
                 cabecera.classList.remove("bg-success")
                 cabecera.classList.remove("bg-warning")
+                closeCasas.classList.add("bg-danger")
+                closeCasas.classList.remove("bg-primary")
+                closeCasas.classList.remove("bg-success")
+                closeCasas.classList.remove("bg-warning")
                
 
               
@@ -40,6 +45,10 @@ export function ampliarHouses(event){
                 cabecera.classList.remove("bg-success")
                 cabecera.classList.remove("bg-warning")
                 cabecera.classList.remove("bg-danger")
+                closeCasas.classList.add("bg-primary")
+                closeCasas.classList.remove("bg-success")
+                closeCasas.classList.remove("bg-warning")
+                closeCasas.classList.remove("bg-danger")
 
 
             }else if(etiquetafundador.contains("tres")){
@@ -51,6 +60,10 @@ export function ampliarHouses(event){
                 cabecera.classList.remove("bg-warning")
                 cabecera.classList.remove("bg-danger")
                 cabecera.classList.remove("bg-primary")
+                closeCasas.classList.add("bg-success")
+                closeCasas.classList.remove("bg-warning")
+                closeCasas.classList.remove("bg-danger")
+                closeCasas.classList.remove("bg-primary")
                
 
             }else if(etiquetafundador.contains("cuatro")){
@@ -62,6 +75,10 @@ export function ampliarHouses(event){
                 cabecera.classList.remove("bg-danger")
                 cabecera.classList.remove("bg-success")
                 cabecera.classList.remove("bg-primary")
+                closeCasas.classList.add("bg-warning")
+                closeCasas.classList.remove("bg-danger")
+                closeCasas.classList.remove("bg-success")
+                closeCasas.classList.remove("bg-primary")
                 
 
             }
