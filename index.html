@@ -66,7 +66,7 @@
     </header>
     <main>
 
-       
+
         <section>
             <img src="img/fondoharry.jpg" alt="HarryPotter" class="img-fluid w-100">
         </section>
@@ -84,7 +84,7 @@
                     </p>
                     <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        Registrate
+                        Sing up
                         <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
@@ -97,26 +97,32 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title " id="offcanvasExampleLabel"><strong>Sing up</strong></h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
-                        images, lists, etc.
+                <div class="offcanvas-body bg-dark">
+                    <div class="container">
+
+                        <img src="img/harrypotter2.png" alt="fotoform" class="w-100 img-fluid mb-3">
+
+                        <form class="">
+
+                            <div class="mb-3">
+                                <label  class="form-label text-white">Email</label>
+                                <input type="email" class="form-control" id="cajaemail">
+                            </div>
+
+                            <div class="mb-3">
+                                <label  class="form-label text-white">Password</label>
+                                <input type="password" class="form-control" id="cajapassword">
+                            </div>
+
+                            <button type="submit" class="btn btn-light" id="botonregistro">Sing up</button>
+                        </form>
+
                     </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                  
                 </div>
             </div>
         </section>
@@ -142,8 +148,8 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            
-                            <img src="/img/gifs/hp11.gif" alt="Funny image"> 
+
+                            <img src="/img/gifs/hp11.gif" alt="Funny image">
 
                             <div class="card-body">
                                 <h5 class="card-title text-dark text-lg-center"> <strong>Harry James Potter</strong>
@@ -169,13 +175,13 @@
                                     for Gryffindor House. She possesses a brilliant academic mind, and proved to be a
                                     gifted student.</p>
                             </div>
-                            <img src="/img/gifs/her2.gif" alt="Funny image"> 
+                            <img src="/img/gifs/her2.gif" alt="Funny image">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card h-100">
-                            <img src="/img/gifs/ron2.gif" alt="Funny image"> 
+                            <img src="/img/gifs/ron2.gif" alt="Funny image">
                             <div class="card-body">
                                 <h5 class="card-title text-dark text-lg-center"><strong> Ronald Bilius Weasley</strong>
                                 </h5>
@@ -230,6 +236,8 @@
     <script>
         new WOW().init();
     </script>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registrarusuario.js" type="module"></script>
 </body>
 
 </html>
