@@ -29,3 +29,11 @@
   
     
 }
+
+.comedor1{
+
+  background-image: url("../img/comedor3.jpg")!important;
+  height: 550px;
+  background-attachment: fixed;
+  background-position: top center;
+}
