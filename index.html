@@ -65,7 +65,7 @@
         </nav>
     </header>
     <main>
-      
+
 
 
         <section>
@@ -110,20 +110,21 @@
                         <form class="">
 
                             <div class="mb-3">
-                                <label  class="form-label text-white">Email</label>
+                                <label class="form-label text-white">Email</label>
                                 <input type="email" class="form-control" id="cajaemail">
                             </div>
 
                             <div class="mb-3">
-                                <label  class="form-label text-white">Password</label>
+                                <label class="form-label text-white">Password</label>
                                 <input type="password" class="form-control" id="cajapassword">
                             </div>
 
-                            <button type="submit" class="btn btn-light" id="botonregistro">Sing up</button>
+                            <button type="button" class="btn btn-light" id="botonregistro">Sign up</button>
+                            <button type="button" class="btn btn-light" id="botonLogin">Login up</button>
                         </form>
 
                     </div>
-                  
+
                 </div>
             </div>
         </section>
@@ -193,19 +194,40 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
                 </div>
             </div>
         </section>
 
     </main>
+
+    <section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalLogin">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title bg-dark text-white" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 id="mensajeLogin"> </h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-dark mt-4 p-3 text-white">
         <div class="container">

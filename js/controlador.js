@@ -90,3 +90,12 @@ botonlimpiar.addEventListener("click",function(){
 
 
 })
+
+let botonDolares=document.getElementById("dolares")
+botonDolares.addEventListener("click",function(){
+
+    let contenedorModal=document.getAnimations("contenedorCarrito")
+    
+
+})
+
