@@ -25,15 +25,54 @@
 }
 
 .fondo1{
-   background-color: white;
+  background-image: url("../img/Peliculas/mapafondo.jpeg")!important;
+  height: 550px;
+  background-attachment: fixed;
+  background-position: top center;
   
     
 }
 
 .comedor1{
 
-  background-image: url("../img/comedor3.jpg")!important;
+  background-image: url("../img/bosque.jpeg")!important;
   height: 550px;
   background-attachment: fixed;
   background-position: top center;
 }
+
+.color1{
+background-color: #3797db;
+}
+
+.color2{
+background-color: #3e906f;
+}
+
+.color4{
+background-color: #cc4ee1;
+}
+
+.color5{
+background-color: #67eeef;
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color6{
+  background-color: #e8d564;
+}
+
+.color7{
+background-color: #6fbc31;
+}
+
+.color8{
+background-color: #6c9ca0;
+}
+
+
