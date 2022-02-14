@@ -60,7 +60,7 @@ productos.forEach(function (producto) {
     precioProducto.classList.add("text-danger")
     precioProducto.textContent =  producto.precio
     precioProducto.textContent = producto.precio
-
+  
     let botonProducto = document.createElement("button")
     botonProducto.classList.add("m-2")
     botonProducto.classList.add("btn-lg")

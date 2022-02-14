@@ -16,15 +16,18 @@ let producto={}
        }
 
        let etiquetaNombreProducto=document.getElementById("nombreProducto")
+       etiquetaNombreProducto.classList.add("text-center")
        etiquetaNombreProducto.textContent=producto.nombre
 
        let etiquetaPrecioProducto=document.getElementById("precioProducto")
+       etiquetaPrecioProducto.classList.add("text-center")
        etiquetaPrecioProducto.textContent=producto.precio
 
        let etiquetaImagenProducto=document.getElementById("imagenProducto")
        etiquetaImagenProducto.src=producto.foto
 
        let etiquetaDescripcionProducto=document.getElementById("descripcionProducto")
+       etiquetaDescripcionProducto.classList.add("text-center")
        etiquetaDescripcionProducto.textContent=producto.descripcion
 
        return(producto)

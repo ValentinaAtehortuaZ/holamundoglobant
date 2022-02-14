@@ -11,12 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
 </head>
 
 <body class="fondo">
+
+
     <audio src="audio/hp.mp3" loop="3" autoplay="true"></audio>
     <header class=" animate__animated animate__fadeInDown">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,16 +35,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="views/shop.html">store</a></li>
+                                <li><a class="dropdown-item" href="views/shop.html">Store</a></li>
                                 <li><a class="dropdown-item" href="views/about.html">About</a></li>
                                 <li><a class="dropdown-item" href="views/moviesandbooks.html">Movies and Books</a></li>
                                 <li><a class="dropdown-item" href="views/houses.html"> Houses Hogwarts</a></li>
@@ -52,151 +53,388 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
+
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
 
-
-
         <section>
-            <img src="img/fondoharry.jpg" alt="HarryPotter" class="img-fluid w-100">
-        </section>
-        <div class=" wow container mt-5 animate__animated animate__fadeInUp">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-4 ">
-                    <img src="img/harrypotter1.png" alt="HarryPotter" class="img-fluid w-100">
-                </div>
 
-                <div class="col-12 col-md-4 ">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, reiciendis repellendus id
-                        maxime vitae in. Sint est sit, assumenda a esse magni neque quos saepe eligendi dolor dolorum
-                        eveniet temporibus.
-                    </p>
-                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        Sing up
-                        <i class="fas fa-sign-in-alt"></i>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-        </div>
-
-        <section>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title " id="offcanvasExampleLabel"><strong>Sing up</strong></h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body bg-dark">
-                    <div class="container">
-
-                        <img src="img/harrypotter2.png" alt="fotoform" class="w-100 img-fluid mb-3">
-
-                        <form class="">
-
-                            <div class="mb-3">
-                                <label class="form-label text-white">Email</label>
-                                <input type="email" class="form-control" id="cajaemail">
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label text-white">Password</label>
-                                <input type="password" class="form-control" id="cajapassword">
-                            </div>
-
-                            <button type="button" class="btn btn-light" id="botonregistro">Sign up</button>
-                            <button type="button" class="btn btn-light" id="botonLogin">Login up</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="fondobanner">
-
-        </section>
-
-        <section>
-            <div class="container">
+            <div class=" container col-12 mt-3 mb-5 ">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p></p>
+                    <div>
+                        <h5 class="titulo text-center mb-3 mt-3">Welcome to the wonderful world of <h6
+                                class="titulo text-center">Harry Potter</h6>
+                        </h5>
                     </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="my-5 p-5 animate__animated animate__zoomInDown wow">
-
-
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-
-                            <img src="/img/gifs/hp11.gif" alt="Funny image">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-dark text-lg-center"> <strong>Harry James Potter</strong>
-                                </h5>
-                                <p class="card-text">He is a half-blood wizard and the only son of James and Lily
-                                    Potter. He is the only person known to have survived Avada Kedavra's curse, doing so
-                                    twice. Both times the curse was cast by Lord Voldemort.He is selected into
-                                    Gryffindor House.</p>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video controls loop playsinline style="pointer-events: none;" src="audio/videop1.mp4"
+                                    alt="fondo" class="w-100" muted autoplay></video>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-dark text-lg-center"> <strong> Hermione Jean Granger
-                                    </strong></h5>
-                                <p class="card-text">She is a Muggle-born witch. Mr. and Mrs. Granger are dentists in
-                                    the muggle world. At eleven years old she discovered her magical gift and she was
-                                    accepted into Hogwarts School of Witchcraft and Wizardry. Hermione began her magical
-                                    studies on September 1, 1991, shortly before her twelfth birthday, and was selected
-                                    for Gryffindor House. She possesses a brilliant academic mind, and proved to be a
-                                    gifted student.</p>
+                            <div class="carousel-item">
+                                <video controls loop playsinline style="pointer-events: none;" src="audio/videop2.mp4"
+                                    alt="fondo" class="w-100" muted autoplay>
                             </div>
-                            <img src="/img/gifs/her2.gif" alt="Funny image">
-                        </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/img/gifs/ron2.gif" alt="Funny image">
-                            <div class="card-body">
-                                <h5 class="card-title text-dark text-lg-center"><strong> Ronald Bilius Weasley</strong>
-                                </h5>
-                                <p class="card-text">He is a pureblood wizard, the sixth and youngest son of Arthur and
-                                    Molly Weasley. He was also the younger brother of Bill, Charlie, Percy, Fred, and
-                                    George, and the older brother of Ginny. Ron and his brothers and sister lived in the
-                                    Burrow, outside Ottery St. Catchpole.He is selected into Gryffindor House.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </section>
+
+
+
+            <section>
+                <img src="img/fondoharry.jpg" alt="HarryPotter" class="img-fluid w-100">
+            </section>
+            <div class=" wow container mt-5 animate__animated animate__fadeInUp">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-4 ">
+                        <img src="img/gifs/exx.gif" alt="HarryPotter" class="img-fluid w-100 mb-5">
+                    </div>
+
+                    <div class="col-12 col-md-4  ">
+
+                        <div _ngcontent-nbl-c268="" class="mt-1  inf">
+                            <div _ngcontent-nbl-c268="" class="row">
+                                <h3 _ngcontent-nbl-c268="" tcmstartcomponentfield=""
+                                    class="columns small-12 ng-star-inserted">All aboard Hogwarts™ Express</h3>
+                                <!---->
+                                <p _ngcontent-nbl-c268="" tcmstartcomponentfield=""
+                                    class="columns small-12 ng-star-inserted">With a Park-to-Park Ticket, Annual Pass or
+                                    Seasonal Pass, you can board Hogwarts™ Express<sup>*</sup>. Travel between both
+                                    sections of The Wizarding World of Harry Potter™: Diagon Alley™ at Universal Studios
+                                    Florida™ and Hogsmeade™ at Universal’s Islands of Adventure™. Now
+                                    Universal Express Pass accepted™.</p>
+                                <!---->
+                                <div _ngcontent-nbl-c268="" class="columns small-6">
+                                    <tcm-anchor _ngcontent-nbl-c268="" chevronclass="icon-arrow-right"
+                                        _nghost-nbl-c41="" class="ng-star-inserted">
+                                        <a _ngcontent-nbl-c41="" draggable="false" analytics-title="Más Detalles"
+                                            href="/web/es/us/things-to-do/rides-attractions/hogwarts-express"
+                                            target="_self" class="ng-star-inserted"
+                                            link-title="Body | Section: Todos A Bordo Del Hogwarts™ Express | CTA: Más Detalles"><span
+                                                _ngcontent-nbl-c41="" class="ng-star-inserted"></span><i
+                                                _ngcontent-nbl-c41="" aria-hidden="true"
+                                                class="icon icon-arrow-right ng-star-inserted"></i>
+
+                                        </a>
+
+                                    </tcm-anchor>
+                                    <!----><small _ngcontent-nbl-c268="" class="legal ng-star-inserted">*Valid theme
+                                        park admission is required. restrictions apply.</small>
+                                    <!---->
+                                </div>
+                                <div _ngcontent-nbl-c268="" class="media columns small-6">
+                                    <tcm-picture _ngcontent-nbl-c268="" _nghost-nbl-c77="" class="ng-star-inserted">
+                                        <div _ngcontent-nbl-c77="" class="tcm-image-container ng-star-inserted">
+                                            <picture _ngcontent-nbl-c77="">
+                                                <source _ngcontent-nbl-c77="" media="(min-width: 61.25em)"
+                                                    srcset="/webdata/k2/es/us/files/assets/universal-orlando-hogwarts-express-tip-b.png?imwidth=162"
+                                                    class="ng-star-inserted">
+                                                <!---->
+                                                <source _ngcontent-nbl-c77="" media="(min-width: 37.5em)"
+                                                    srcset="/webdata/k2/es/us/files/assets/universal-orlando-hogwarts-express-tip-b.png?imwidth=134"
+                                                    class="ng-star-inserted">
+                                                <!---->
+                                                <source _ngcontent-nbl-c77=""
+                                                    srcset="/webdata/k2/es/us/files/assets/universal-orlando-hogwarts-express-tip-b.png?imwidth=134">
+
+                                            </picture>
+                                        </div>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </tcm-picture>
+                                    <!---->
+                                </div>
+                            </div>
+                            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                Sing up
+                                <i class="fas fa-sign-in-alt"></i>
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <section>
+                <div class="container__card">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col-4 ">
+                            <div class="card__father">
+                                <div class="card card1">
+                                    <div class="card__front">
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="img/p1.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text text-black"><strong>Less public. Perfect
+                                                            weather. Excellent Rates.</strong><br>
+                                                        January 2 to February 17
+
+                                                        FROM
+                                                        $91.00 *
+                                                        PER NIGHT, PLUS TAX, BASED ON A 4-NIGHT STAY AT UNIVERSAL’S
+                                                        ENDLESS SUMMER RESORT – DOCKSIDE INN AND SUITES</p>
+                                                </div>
+                                            </div>
+
+                                            <h1>
+
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                            <h5><strong>Menos Público. Clima Perfecto. Tarifas Excelentes</strong>
+                                            </h5>
+                                            <h6>
+                                                It's the perfect time to visit Universal Orlando Resort. We call it The
+                                                Secret Season. With such cheap rates, you could plan an after-holiday
+                                                getaway right away. We have several hotels so you can choose the one
+                                                that best suits your budget and vacation style. This offer is for those
+                                                who can travel between January 2 and February 17. Other dates also
+                                                available at discounted rates.
+                                                <br>
+                                                FROM
+                                                $91.00*
+                                                PER NIGHT, PLUS TAX, BASED ON A 4-NIGHT STAY AT UNIVERSAL’S ENDLESS
+                                                SUMMER RESORT – DOCKSIDE INN AND SUITES Terms & Conditions.
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 ">
+                            <div class="card__father">
+                                <div class="card card1">
+                                    <div class="card__front" style="background-image: url(images/img2.jpg);">
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="img/p2.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text text-black"><strong>Exclusive The Wizarding
+                                                            World of Harry Potter™ Vacation Package</strong><br>
+
+                                                        January 2 to February 17
+                                                        FROM
+                                                        $115.00 *
+                                                        PER PERSON, PER NIGHT, BASED ON A FAMILY OF FOUR, LIMITED
+                                                        AVAILABILITY-DOCKSIDE AND SUITES.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                            <h5><strong>Exclusive The Wizarding World of Harry Potter™ Vacation
+                                                    Package</strong>
+                                            </h5><br>
+                                            <h6>
+                                                In Islands of Adventure, you can visit Hogwarts™ castle and explore
+                                                Hogsmeade™ village. And at Universal Studios, you can enter Diagon
+                                                Alley™ and enjoy incredible thrill rides, magical experiences and much
+                                                more. Plus, stay at one of our spectacular hotels.
+                                                <br>
+                                                FROM
+                                                $115.00*
+                                                PER PERSON, PER NIGHT, BASED ON A FAMILY OF FOUR, LIMITED AVAILABILITY
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card__father">
+                                <div class="card card1">
+                                    <div class="card__front" style="background-image: url(images/img3.jpg);">
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="img/p3.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text text-black"><strong>Paquete de 3 Parques, 5
+                                                            Noches, Hotel y Boletos</strong><br>
+                                                        Book before 5 my. 2022
+
+                                                        FROM
+                                                        $89.00 *
+                                                        *Per person, per night, family of 4 at Universal's Endless
+                                                        Summer Resort–Dockside Inn and Suites, limited availability.
+                                                        Restrictions apply.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                            <h5><strong>Package of 3 Parks, 5 Nights, Hotel and Tickets</strong>
+                                            </h5><br>
+                                            <h6>
+                                                Book before 5 my. 2022 for stays on select nights between now and Dec.
+                                                31. 2022. *
+                                                <br><br>
+
+                                                FROM
+                                                $89.00*
+                                                *Per person, per night, family of 4 at Universal's Endless Summer
+                                                Resort–Dockside Inn and Suites, limited availability. Restrictions
+                                                apply.
+                                                
+                                            
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            </div>
+
+            <section>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title " id="offcanvasExampleLabel"><strong>Sing up</strong></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-dark">
+                        <div class="container">
+
+                            <img src="img/gifs/registro.gif" alt="fotoform" class="w-100 img-fluid mb-3">
+
+                            <form class="">
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white">Email</label>
+                                    <input type="email" class="form-control" id="cajaemail">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white">Password</label>
+                                    <input type="password" class="form-control" id="cajapassword">
+                                </div>
+
+                                <button type="button" class="btn btn-light" id="botonregistro">Sign up</button>
+                                <button type="button" class="btn btn-light" id="botonLogin">Login up</button>
+
+
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="fondobanner">
+
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="my-5 p-5 animate__animated animate__zoomInDown wow">
+
+
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class=" card h-100">
+
+                                <img src="/img/gifs/hp11.gif" alt="Funny image">
+
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark text-lg-center"> <strong>Harry James Potter</strong>
+                                    </h5>
+                                    <p class="card-text">He is a half-blood wizard and the only son of James and Lily
+                                        Potter. He is the only person known to have survived Avada Kedavra's curse,
+                                        doing so
+                                        twice. Both times the curse was cast by Lord Voldemort.He is selected into
+                                        Gryffindor House.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark text-lg-center"> <strong> Hermione Jean Granger
+                                        </strong></h5>
+                                    <p class="card-text">She is a Muggle-born witch. Mr. and Mrs. Granger are dentists
+                                        in
+                                        the muggle world. At eleven years old she discovered her magical gift and she
+                                        was
+                                        accepted into Hogwarts School of Witchcraft and Wizardry. Hermione began her
+                                        magical
+                                        studies on September 1, 1991, shortly before her twelfth birthday, and was
+                                        selected
+                                        for Gryffindor House. She possesses a brilliant academic mind, and proved to be
+                                        a
+                                        gifted student.</p>
+                                </div>
+                                <img src="/img/gifs/her2.gif" alt="Funny image">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/img/gifs/ron2.gif" alt="Funny image">
+                                <div class="card-body">
+                                    <h5 class="card-title text-dark text-lg-center"><strong> Ronald Bilius
+                                            Weasley</strong>
+                                    </h5>
+                                    <p class="card-text">He is a pureblood wizard, the sixth and youngest son of Arthur
+                                        and
+                                        Molly Weasley. He was also the younger brother of Bill, Charlie, Percy, Fred,
+                                        and
+                                        George, and the older brother of Ginny. Ron and his brothers and sister lived in
+                                        the
+                                        Burrow, outside Ottery St. Catchpole.He is selected into Gryffindor House.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
     </main>
 
@@ -222,7 +460,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        
+
                     </div>
                 </div>
             </div>

@@ -86,16 +86,19 @@ botonlimpiar.addEventListener("click",function(){
     pildora = []
 
     
-    modalVerCarrito.hide()
+   /* let cambiarUsd=document.getElementById("dolares")
+    cambiarUsd.innerHTML="USD"
+    cambiarUsd=[]
 
-
-})
-
-let botonDolares=document.getElementById("dolares")
-botonDolares.addEventListener("click",function(){
-
-    let contenedorModal=document.getAnimations("contenedorCarrito")
+    carrito=[]*/
     
+  
+  
 
 })
+
+
+
+
+
 

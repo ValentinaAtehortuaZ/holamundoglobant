@@ -71,7 +71,7 @@
                     <div class="carousel-item">
                         <img src="../img/varitas.png" class="d-block w-100" alt="...">
                     </div>
-                    
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
@@ -100,9 +100,10 @@
         <div class="modal fade" id="modalInfoProducto">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header bg-secondary">
+                    <div class="modal-header bg-dark text-light ">
                         <h5 class="modal-title"> Harry Potter Shop</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container">
@@ -140,30 +141,57 @@
         <!-- Modal -->
         <div class="modal fade" id="modalVerCarrito">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"> Harry Potter Store</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container" id="contenedorCarrito">
 
-                        </div>
-                        <div id="MostrarTotal"></div>
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-light ">
+                        <h5 class="modal-title"> Harry Potter Store</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
+
+                    <div class="modal-body">
+
+                        <div class="container" id="contenedorCarrito">
+                            
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close" id="botonEliminar"></button>
+                            
+                        </div>
+
+                        <h6 id="subtotal"></h6>
+
+                    </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-dark" id="botonlimpiar">Clean Cart</button>
                         <button type="button" class="btn btn-primary" id="dolares">US$</button>
                         <button type="button" class="btn btn-success">Buy</button>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-
+    <footer class="bg-dark mt-4 p-3 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p>Valentina Atehortúa Zapata &copy;</p>
+                    <p> Novela fantastica</p>
+                    <p>Tienda</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Valentina Atehortúa Zapata &copy;</p>
+                    <p>J. K. Rowling</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Valentina Atehortúa Zapata &copy;</p>
+                    <p> Editorial</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
