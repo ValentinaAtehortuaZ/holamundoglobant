@@ -7,8 +7,8 @@
 .fondo{
 
     background: rgb(116,0,1);
-
-background-image: url(img/plataforma.jpeg);
+    background: linear-gradient(90deg,#740001 0,#000000);
+    
 
 }
 
@@ -30,8 +30,8 @@ background-image: url(img/plataforma.jpeg);
     text-align: left;
 }
 
-.pltaforma{
-    background-image: url(img/plataforma.jpeg);
+#plataforma{
+    background-image: url(img/plataforma.jpeg) !important;
 }
 
 .inf{
@@ -65,6 +65,92 @@ background-image: url(img/plataforma.jpeg);
                 0 10px 10px rgba(0, 0, 0, .2),
                 0 20px 20px rgba(0, 0, 0, .15) ; 
 }
+
+.instagram {
+    
+    font-size: 50px;
+    color:rgb(101, 101, 102);
+    transform: translateY(-2px);
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+
+.facebook {
+    
+    
+    
+        font-size: 50px;
+        color:rgb(101, 101, 102);
+        transform: translateY(-2px);
+        margin-left: 35px;
+    
+    
+}
+
+.footer-section[_ngcontent-mby-c104] {
+    border-top: 2px solid #dbdbdb;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.align-middle {
+    align-items: center;
+}
+.row {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul{
+    list-style: none;
+}
+#icon{
+    align-items: center !important;
+    margin-left: 65px
+}
+
+@media (min-width: 1024px){
+    #icon{
+        align-items: center !important;
+        margin-left: 230px
+    }
+}
+
+.information{
+    align-items: center;
+}
+
+@media (min-width: 500px){
+
+    .copyright{
+        margin-left: 90px;
+       color: rgb(255, 255, 255);
+       text-decoration: none !important;
+       margin-bottom: 1px;
+      text-align: center;
+    
+    }
+
+}
+
+
+.copyright{
+    margin-left: 90px;
+   color: rgb(255, 255, 255);
+   text-decoration: none !important;
+   margin-bottom: 1px;
+  text-align: center;
+
+}
+
+
+
+
+
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
